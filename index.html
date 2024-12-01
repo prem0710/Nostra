@@ -18,7 +18,7 @@
 <body>
     <!--Sign up offer-->
     <div class="sign-up">
-        <p>Sign up and <b> Get 20% OFF </b> for your first order
+        <p>Join Nostra and <b> Get 20% OFF </b> for your first order
             <i id="offer-close" style="margin-left: 10%; cursor: pointer; padding: 4px;" class="fa-solid fa-xmark"></i>
         </p>
     </div>
@@ -28,25 +28,28 @@
 
         <h1><a href="index.html">Nostra</a></h1>
         <div class="navbar-links gap-5">
-            <p class="navbar-links"><a href="index.html">New Arrival</a></p>
-            <p class="navbar-links"><a href="index.html">Most Wanted</a></p>
-            <p class="navbar-links"><a href="index.html">Collections</a></p>
-            <p class="navbar-links"><a href="index.html">Contact us</a></p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="navbar-links">
-                <path fill-rule="evenodd"
-                    d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-                    clip-rule="evenodd" />
-            </svg>
-            <i class="fa-solid fa-cart-shopping" style="color: #333;"></i>            
+            <p class="navbar-links"><a href="#new-arrival">New Arrival</a></p>
+            <p class="navbar-links"><a href="#most-wanted">Most Wanted</a></p>
+            <p class="navbar-links"><a href="./collections.html">Collections</a></p>
+            <p class="navbar-links"><a href="./contactus.html">Contact us</a></p>
+            <i id="login" class="fa-solid fa-user" ></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #333;" id="cartIcon"></i>            
         </div>
 
         <div class="navbar-menu-toggle">
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping" style="color: #333;"></i>     
+            <i id="login2" class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #333;" id="cart-Icon"></i>     
             <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
         </div>
 
     </nav>
+    <!--Cart action-->
+    <div id="cart" class="cart">
+        <div class="cart-content">
+        <i id="close-btn" class="fa-solid fa-xmark"></i>
+        <p>Your cart is empty!</p>
+        </div>
+    </div>
 
     <!--side navbar-->
 
@@ -57,16 +60,10 @@
         <div class="side-navbar-links">
 
             <p class="side-navbar-link"><a href="./index.html">Home</a></p>
-            <p class="side-navbar-link"><a href="#new-arrival">New Arrival</a></p>
-        <p class="side-navbar-link"><a href="#most-wanted">Most Wanted</a></p>
+            <p id="new-arrival1" class="side-navbar-link"><a href="#new-arrival">New Arrival</a></p>
+        <p id="most-wanted1" class="side-navbar-link"><a href="#most-wanted">Most Wanted</a></p>
         <p class="side-navbar-link"><a href="./collections.html">Collections</a></p>
-        <p class="side-navbar-link"><a href="./contactus.html">Contact Us</a></p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path fill-rule="evenodd"
-                d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z"
-                clip-rule="evenodd" />
-        </svg>
-        
+        <p class="side-navbar-link"><a href="./contactus.html">Contact Us</a></p>       
     </div>
         
     </div>
@@ -76,7 +73,7 @@
     <div class="login">
         <div class="login-box">
             <div class="login-header">
-                <i class="fa-solid fa-xmark" style="color: #fff;"></i>
+                <i id="loginclose" class="fa-solid fa-xmark" style="color:#fff;"></i>
             </div>
             <form action class="login_form">
                 <div class="header">
@@ -113,7 +110,7 @@
     <div class="container-all">
         <section class="container">
             <div class="slider">
-                <div class="slider-left button">
+                <div class="slider-left-button">
                     <i id="left-action" class="fa-solid fa-angle-left" style="color: #d7d0d0;"></i>
                 </div>
                 <div class="slider-content">
@@ -124,9 +121,9 @@
                 <div class="slider-images">
                     <img class="slider-image" src="images/slider/silde-image1.jpg" width="100%" alt="">
                     <img class="slider-image" src="images/slider/silde-image2.jpg" alt="">
-                    <img class="slider-image" src="images/slider/silde-image1.jpg" alt="">
+                    <img class="slider-image" src="images/slider/silde-image3.jpg" alt="">
                 </div>
-                <div class="slider-right button">
+                <div class="slider-right-button">
                     <i id="right-action" class="fa-solid fa-angle-right" style="color: #d7d0d0;"></i>
                 </div>
             </div>
@@ -142,21 +139,21 @@
                         <img src="./images/animation image/Men/ani-image1.jpg" alt="">
                         <div class="overlay">
                             <h4>Sweat Shirts</h4>
-                            <button onclick="explore('him')">Explore more</button>
+                            <button>Explore more</button>
                         </div>
                     </div>
                     <div class="box">
                         <img src="./images/animation image/Men/ani-image4.jpg" alt="">
                         <div class="overlay">
                             <h4>Sneakers</h4>
-                            <button onclick="explore('him')">Explore more</button>
+                            <button>Explore more</button>
                         </div>
                     </div>
                     <div class="box">
                         <img src="./images/animation image/Men/ani-image5.jpg" alt="">
                         <div class="overlay">
                             <h4>Men Watches</h4>
-                            <button onclick="explore('him')">Explore more</button>
+                            <button>Explore more</button>
                         </div>
                     </div>
                 </div>
@@ -170,21 +167,21 @@
                         <img src="./images/animation image/Women/ani-image 1.jpg" alt="">
                         <div class="overlay">
                             <h4>Suits & Pants</h4>
-                            <button onclick="explore('her')">Explore more</button>
+                            <button>Explore more</button>
                         </div>
                     </div>
                     <div class="box">
                         <img src="./images/animation image/Women/ani-image 2.jpg" alt="2">
                         <div class="overlay">
                             <h4>Women Watches</h4>
-                            <button onclick="explore('her')">Explore more</button>
+                            <button>Explore more</button>
                         </div>
                     </div>
                     <div class="box">
                         <img src="./images/animation image/Women/ani-image 5.jpg" alt="">
                         <div class="overlay">
                             <h4>Footwear</h4>
-                            <button onclick="explore('her')">Explore more</button>
+                            <button>Explore more</button>
                         </div>
                     </div>
                 </div>
@@ -233,56 +230,56 @@
         </div>
     
         <div class="most-wanted">
-            <div class="most-wanted container">
+            <div class="most-wanted-container">
                 <img src="./images/most wanted/ms1.jpg" alt="">
                 <p class="sale-overview">sale</p>
                 <img class="like" src="./images/Black-Heart.png" alt="">
             </div>
     
-            <div class="most-wanted container">
+            <div class="most-wanted-container">
                 <img src="./images/most wanted/ms2.jpg" alt="">
                 <p class="sale-overview">sale</p>
                 <img class="like" src="./images/Black-Heart.png" alt="">
             </div>
     
-            <div class="most-wanted container">
+            <div class="most-wanted-container">
                 <img src="./images/most wanted/ms3.jpg" alt="">
                 <p class="sale-overview">sale</p>
                 <img class="like" src="./images/Black-Heart.png" alt="">
             </div>
     
-            <div class="most-wanted container">
+            <div class="most-wanted-container">
                 <img src="./images/most wanted/ms4.jpg" alt="">
                 <p class="sale-overview">sale</p>
                 <img class="like" src="./images/Black-Heart.png" alt="">
             </div>
     
-            <div class="most-wanted container">
+            <div class="most-wanted-container">
                 <img src="./images/most wanted/ms5.jpg" alt="">
                 <p class="sale-overview">sale</p>
                 <img class="like" src="./images/Black-Heart.png" alt="">
             </div>
     
-            <div class="most-wanted container">
+            <div class="most-wanted-container">
                 <img src="./images/most wanted/ms6.jpg" alt="">
                 <p class="sale-overview">sale</p>
                 <img class="like" src="./images/Black-Heart.png" alt="">
             </div>
     
-            <div class="most-wanted container">
+            <div class="most-wanted-container">
                 <img src="./images/most wanted/ms7.jpg" alt="">
                 <p class="sale-overview">sale</p>
                 <img class="like" src="./images/Black-Heart.png" alt="">
             </div>
     
-            <div class="most-wanted container">
+            <div class="most-wanted-container">
                 <img src="./images/most wanted/ms8.jpg" alt="">
                 <p class="sale-overview">sale</p>
                 <img class="like" src="./images/Black-Heart.png" alt="">
             </div>
         </div>
 
-        <h2 style="color: #333; text-align: center; font-size: 2em; margin-top: 5vw;">Global Brands</h2>
+        <h2 style="color: #333; text-align: center; font-size: 2em; margin-top: 4vw;">Global Brands</h2>
 
         <section class="brands">
             <div class="brands-container">
@@ -305,11 +302,95 @@
             </div>
 
         </section>
+
+    <!--On going Offer-->
+
+    <section class="ongoing-offer">
+        <div class="ongoing-offer-img">
+            <img src="./images/new offer/offer1U.jpg" alt="">
+        </div>
+        <div class="ongoing-offer-text">
+            <h3>Limited Offers On Sneakers</h3>
+            <img src="./images/new offer/brand.jpg" alt="">
+            <h5>Min 60% off</h5>
+            <button>Shop Now</button>
+        </div>
+    </section>
+        
+    <!--Services-->
+
+        <h2 style="color: #333; text-align: center; font-size: 2em; margin-top: 3vw; margin-bottom: 2vw;">Nostra Services</h2>
+    <section class="services">
+        <div>
+            <img src="./images/services/geniune.png">
+            <h4>Genuine Products</h4>
+            <p>Every product is 100% genuine and carefully curated to ensure authenticity.
+            We take pride in offering high-quality garments directly from trusted manufacturers and designers.</p>            
+        </div>
+        <div>
+            <img src="./images/services/premium.png" alt="">
+            <h4>Premium Fabrics</h4>
+            <p>Experience luxury with high-quality fabrics crafted for comfort and durability.
+               Each garment is designed to make you look and feel your best.</p>            
+        </div>
+        <div>
+            <img src="./images/services/costumer-service.png" alt="">
+            <h4>Customer Support</h4>
+            <p>We’re here for you! Our dedicated team ensures a seamless shopping experience with quick assistance whenever you need it.</p>            
+        </div>
+        <div>
+            <img src="./images/services/fast-delivery.png" alt="">
+            <h4>Fast & Free Shipping</h4>
+            <p>Shop stress-free with guaranteed fast and free delivery, bringing your fashion favorites straight to your doorstep.</p>            
+        </div>
+    </section>
+</div>
+
+<footer class="footer-group">
+
+    <!--Page updates-->
+
+    <div class="sign-up-updates">
+        <h2>Sign up For Nostra Updates</h2>
+        <p>Join us for the Nostra's latest news to
+            get exclusive discount, updates and more</p>
+            <div>
+                <input placeholder="Email Address">
+            </div>
+            <div>
+                <button>Subscribe</button>
+            </div>
+        
     </div>
     
+    
+    <!--Footer-->
 
 
-    <script src="script.js"></script>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box1">
+                <h2 class="header-text">Nostra</h2>
+                <p>Step into a world of elegance and reliability with every piece you wear.</p>
+            </div>
+            <div class="footer-box2">
+                <i class="icon fa-brands fa-instagram" style="color: #E3DAC9;"></i>
+                <i class="icon fa-brands fa-twitter" style="color: #E3DAC9;"></i>
+                <i class="icon fa-brands fa-facebook" style="color: #E3DAC9;"></i>
+            </div>
+
+        </div>
+        <p>&copy;2024 Nostra</p>
+    </div>
+    
+      
+    
+</footer>
+    
+
+    
+
+<script src="script.js"></script>
 
 </body>
 

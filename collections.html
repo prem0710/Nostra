@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collections</title>
+    <link rel="tailwind-css" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gabarito:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<!--Sign up offer-->
+    <div class="sign-up">
+        <p>Join Nostra and <b> Get 20% OFF </b> for your first order
+            <i id="offer-close" style="margin-left: 10%; cursor: pointer; padding: 4px;" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+
+<!--Navigation Bar-->
+    <nav class="navbar">
+
+        <h1><a href="index.html">Nostra</a></h1>
+        <div class="navbar-links gap-5">
+            <p class="navbar-links"><a href="index.html">Home</a></p>
+            <p class="navbar-links"><a href="contactus.html">Contact us</a></p>
+            <i id="login" class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #333;" id="cartIcon"></i>            
+        </div>
+
+        <div class="navbar-menu-toggle">
+            <i id="login2" class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #333;" id="cart-Icon"></i>     
+            <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+    <!--Cart action-->
+    <div id="cart" class="cart">
+        <div class="cart-content">
+        <i id="close-btn" class="fa-solid fa-xmark"></i>
+        <p>Your cart is empty!</p>
+        </div>
+    </div>
+
+    <!--side navbar-->
+
+    <div class="side-navbar"> 
+        <p style="text-align: right;">
+            <i id="side-navbar-close" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+
+            <p class="side-navbar-link"><a href="./index.html">Home</a></p>
+        <p class="side-navbar-link"><a href="./contactus.html">Contact Us</a></p>       
+        </div>
+        
+    </div>
+
+
+
+    <div class="login">
+        <div class="login-box">
+            <div class="login-header">
+                <i id="loginclose" class="fa-solid fa-xmark" style="color:#fff;"></i>
+            </div>
+            <form action class="login_form">
+                <div class="header">
+                    <a href="#">Log in</a>
+                </div>
+
+
+                <div class="login_group">
+                    <div class="input-box">
+                        <label for="user" class="label">Email:</label>
+                        <input type="email" class="input-field" id="" placeholder="Write your email">
+                    </div>
+                    <div class="input-box">
+                        <label for="password" class="password">Password:</label>
+                        <input type="password" class="input-field" id="" placeholder="Enter your password">
+                    </div>
+                   
+                    <div class="forgot">
+                        <a href="">forget password?</a>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="input-submit" value="Login">
+                    </div>
+
+                    <div class="signup">
+                        <p>You do not have a account? <a href="">Signup</a></p>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container-all">
+
+        <div class="category-section">
+            <div class="filter-section">
+               
+                <h3 class="filter-section-occasion">Occasion</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="Casual"> Casual <br>
+                    <input type="checkbox" name="tags" value="Summer"> Summer 
+
+                </div>
+               
+                <h3 class="filter-section-colors"> Colors </h3>
+                <div>
+                <input type="checkbox" name="tags" value="Black"> Black <br>
+                    <input type="checkbox" name="tags" value="Beige"> Beige <br>
+                    <input type="checkbox" name="tags" value="Brown"> Brown <br>
+                    <input type="checkbox" name="tags" value="White"> White <br>
+                    <input type="checkbox" name="tags" value="Blue"> Blue
+                </div>
+
+                <h3 class="filter-section-arrivals"> Arrivals </h3>
+                <div>
+                <input type="checkbox" name="tags" value="New"> New <br>
+                    <input type="checkbox" name="tags" value="Old"> Old
+                  
+                </div>
+
+            
+                <hr class="vertical-line">
+            </div>
+
+            <div class="product-section">
+                <form class="navbar-search">
+                    <input type="search" placeholder="search" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+
+                <div class="products">
+
+                </div>
+            </div>
+        </div>
+    </div>    
+    <footer class="footer-group">
+
+        <!--Page updates-->
+    
+        <div class="sign-up-updates">
+            <h2>Sign up For Nostra Updates</h2>
+            <p>Join us for the Nostra's latest news to
+                get exclusive discount, updates and more</p>
+                <div>
+                    <input placeholder="Email Address">
+                </div>
+                <div>
+                    <button>Subscribe</button>
+                </div>
+            
+        </div>
+
+        <div id="cart-message"></div>
+
+        
+        
+<!--Footer-->
+<div class="footer">
+    <div class="footer-container">
+               <div class="footer-box1">
+                    <h2 class="header-text">Nostra</h2>
+                    <p>Step into a world of elegance and reliability with every piece you wear.</p>
+                </div>
+                <div class="footer-box2">
+                    <i class="icon fa-brands fa-instagram" style="color: #E3DAC9;"></i>
+                    <i class="icon fa-brands fa-twitter" style="color: #E3DAC9;"></i>
+                    <i class="icon fa-brands fa-facebook" style="color: #E3DAC9;"></i>
+                </div>
+    
+            </div>
+            <p>&copy;2024 Nostra</p>
+        </div>
+      </footer>
+
+    <script type="module" src="collections.js"></script>
+</body>
+</html>
